@@ -2,9 +2,74 @@
     <html lang="en">
         <head>
             <title>My First HTML Page</title>
+            <link rel="stylesheet" href="style.css">
+            <style>
+                p {
+                    color: green;
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                body {
+                    background-color: lightgray;
+                    font-family: Arial, sans-serif;
+                    padding: 20px;
+                }
+                h2 {
+                    font-size: 1.5em;
+                    color: darkblue;
+                    text-align: left;
+                }
+                .content-box {
+                    padding: 10px;
+                    margin: 15px;
+                    background-color: #f0f0f0;
+                    border: 2px solid #ccc;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                    font-family: Arial, sans-serif;
+                }
+                th, td {
+                    background-color: #f2f2f2;
+                    border: 2px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                    color: black;
+                    text-align: left;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                label {
+                    font-weight: bold;
+                }
+                input[type="text"], input[type="email"] {
+                    padding: 8px;
+                    border: 2px solid #ddd;
+                    border-radius: 5px;
+                }
+                input[type="submit"] {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+            </style>
         </head>
         <body>
-            <h1>I'm Veera Joosela</h1>
+            <h1 style="color: darkred; text-align: center">I'm Veera Joosela</h1>
             <p>Welcome to my page!</p>
             <p>I am a student at Laurea.</p>
             <img src="Kuva.JPG" alt="A photo of me" width="200">
@@ -12,8 +77,12 @@
             <ul>
                 <li>Pilates</li>
                 <li>Video games</li>
-                <li>Reading books</lis>
+                <li>Reading books</li>
             </ul>
+            <div class="content-box">
+                <h3>About me</h3>
+                <p>My favorite hobby is pilates</p>
+            </div>
             <a href="https://www.youtube.com/">Visit Youtube!</a>
             <table>
                 <tr>
