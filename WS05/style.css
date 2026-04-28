@@ -1,0 +1,262 @@
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: darkred;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.content-box {
+    padding: 15px;
+    background: white;
+    border-left: 5px solid #f73636;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.pseudo-list li {
+    padding: 10px;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background: #f8c3b6;
+}
+
+.pseudo-list li:nth-child(even) {
+    background: #f9d7d7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+th {
+    background: #f4aeae;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+        background-color: #f3847a;
+        color: rgb(244, 238, 238);
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        font-weight: bold;
+    }
+
+.transition-button {
+    background: #f4a696;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.transition-button:hover {
+    background: #ff6b6b;
+    transform: scale(1.05);
+}
+
+.animation-box {
+    width: 60px;
+    height: 60px;
+    background: #ed8a76;
+    position: relative;
+    animation: move 2.5s infinite alternate ease-in-out;
+    margin-top: 20px;
+}
+
+@keyframes move {
+    from { left: 0; }
+    to { left: 180px; }
+}
+
+.filter-image {
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0.4s ease;
+    margin-top: 10px;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    font-style: italic;
+    position: relative;
+    padding: 20px 20px 20px 50px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #ccc;
+    line-height:  1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: #f9d7d7;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #f8c3b6;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 200px;
+}
+
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: rgb(242, 114, 114);
+    }
+}
+
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: rgb(244, 184, 184);
+    }
+}
+
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: rgb(243, 178, 178);
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+.responsive-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.media-query-box {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 601px) {
+    .media-query-box {
+        background-color: rgb(238, 113, 113);
+    }
+}
+
+@media (min-width: 601px) {
+    .media-query-box {
+        background-color: rgb(218, 154, 154);
+    }
+}
+
+.responsive-nav .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .responsive-nav .nav-list {
+        display: none;
+    }
+
+    .responsive-nav .menu-toggle {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

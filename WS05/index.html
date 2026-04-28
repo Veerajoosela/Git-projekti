@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+            <title>My First HTML Page</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <body>
+
+            <header>
+                <h1>My website</h1>
+
+                <nav class="responsive-nav">
+                    <button class="menu-toggle">☰ Menu</button>
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="container">
+
+                <section id="about">
+                    <h2>Welcome to my page!</h2>
+
+                    <p>I am a student at Laurea</p>
+
+            <img src="Kuva.JPG" alt="Responsive Image" class="responsive-image">
+            <p>This is an image of me</p>
+
+            <blockquote class="quote">
+                It always seems impossible until it's done. -Nelson Mandela
+            </blockquote>
+
+                        <a href="https://www.youtube.com/">Visit Youtube!</a>
+            
+            <div class="content-box">
+                <h3>About me</h3>
+                <p>My favorite hobby is pilates</p>
+            </div>
+            </section>
+
+                <section id="hobbies">
+                    <h2>My hobbies</h2>
+
+                    <div class="flex-container">
+                        <div class="box">Pilates</div>
+                        <div class="box">Video games</div>
+                        <div class="box">Reading books</div>
+                        <div class="box">Cooking</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Responsive Columns</h2>
+
+                <div class="responsive-container">
+                    <div class="column">Column 1</div>
+                    <div class="column">Column 2</div>
+                </div>
+                </section>
+
+            <section id="courses">
+                <h2>My courses (Grid)</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Website Development</div>
+                    <div class="grid-item">Python Programming</div>
+                    <div class="grid-item">Digital Service Development</div>
+                    <div class="grid-item">Ongoing</div>
+                    <div class="grid-item">Completed</div>
+                    <div class="grid-item">Completed</div>
+                </div>
+            </section>
+
+                <section>
+                    <h2>Responsive example</h2>
+
+                    <div class="media-query-box">
+                    Resize the window to see the effect!
+                </div>
+                </section>
+
+            <section id="contact">
+                <h2>Contact me</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Interactive Elements</h2>
+
+            <button class="transition-button">Hover me</button>
+
+            <div class="animation-box"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    </body>
+    </html>
