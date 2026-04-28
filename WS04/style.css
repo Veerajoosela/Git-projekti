@@ -162,11 +162,40 @@ input[type="submit"] {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-cap: 10px;
+    grid-gap: 10px;
 }
 
 .grid-item {
     background-color: #f9d7d7;
     padding: 20px;
     text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    background-color: #f8c3b6;
+    padding: 20px;
+    text-align: center;
+}
+
+.responsive-box {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: rgb(242, 114, 114);
+    }
+}
+
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: rgb(244, 184, 184);
+    }
 }

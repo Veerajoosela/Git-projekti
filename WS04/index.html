@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
         <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta charset="UTF-8">
             <title>My First HTML Page</title>
             <link rel="stylesheet" href="style.css">
@@ -10,10 +11,12 @@
 
             <header>
                 <h1>My website</h1>
+
                 <nav>
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#courses">Courses</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -23,6 +26,7 @@
 
                 <section id="about">
                     <h2>Welcome to my page!</h2>
+
                     <p>I am a student at Laurea</p>
 
             <img src="Kuva.JPG" alt="A photo of me" width="200" class="filter-image">
@@ -30,25 +34,25 @@
             <blockquote class="quote">
                 It always seems impossible until it's done. -Nelson Mandela
             </blockquote>
-
-            <h2>My hobbies</h2>
-            <ul class="pseudo-list">
-                <li>Pilates</li>
-                <li>Video games</li>
-                <li>Reading books</li>
-                <li>Cooking</li>
-                </ul>
-
+            
             <div class="content-box">
                 <h3>About me</h3>
                 <p>My favorite hobby is pilates</p>
             </div>
             </section>
-            </main>
 
-            <a href="https://www.youtube.com/">Visit Youtube!</a>
+                <section id="hobbies">
+                    <h2>My hobbies</h2>
 
-            <section id="services">
+                    <div class="flex-container">
+                        <div class="box">Pilates</div>
+                        <div class="box">Video games</div>
+                        <div class="box">Reading books</div>
+                        <div class="box">Cooking</div>
+                    </div>
+                </section>
+
+            <section id="courses">
                 <h2>My courses (Grid)</h2>
                 <div class="grid-container">
                     <div class="grid-item">Website Development</div>
@@ -60,36 +64,43 @@
                 </div>
             </section>
 
-            <table>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>Website development</td>
-                    <td>Ongoing</td>
-                </tr>
-                <tr>
-                    <td>Python Programming</td>
-                    <td>Completed</td>
-                </tr>
-                <tr>
-                    <td>Digital service development</td>
-                    <td>Completed</td>
-                </tr>
-            </table>
+                <section>
+                    <h2>Resposive example</h2>
+
+                    <div class="responsive-box">
+                    Resize the window to see the effect!
+                </div>
+                </section>
+
+            <section id="contact">
+                <h2>Contact me</h2>
 
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br><br>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br><br>
+
                 <input type="submit" value="Submit">
             </form>
+
+            <a href="https://www.youtube.com/">Visit Youtube!</a>
+        </section>
+
+        <section>
+            <h2>Interactive Elements</h2>
 
             <button class="transition-button">Hover me</button>
 
             <div class="animation-box"></div>
-            
-        </body>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    </body>
     </html>
