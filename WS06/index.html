@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+            <title>My First HTML Page</title>
+            <link rel="stylesheet" href="style.css">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+
+        <body>
+            <!-- Bootstrap JavaScript (place before closing </body> tag) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My website</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="container">
+
+                <section id="about">
+                    <h2>Welcome to my page!</h2>
+
+                    <p>I am a student at Laurea</p>
+
+            <img src="Kuva.JPG" alt="Responsive Image" class="responsive-image">
+            <p>This is an image of me</p>
+
+            <blockquote class="quote">
+                It always seems impossible until it's done. -Nelson Mandela
+            </blockquote>
+
+                        <a href="https://www.youtube.com/">Visit Youtube!</a>
+            
+            <div class="content-box">
+                <h3>About me</h3>
+                <p>My favorite hobby is pilates</p>
+            </div>
+            </section>
+
+                <section id="hobbies">
+                    <h2>My hobbies</h2>
+
+                    <div class="flex-container">
+                        <div class="box">Pilates</div>
+                        <div class="box">Video games</div>
+                        <div class="box">Reading books</div>
+                        <div class="box">Cooking</div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md col-12">Column 1</div>
+                        <div class="col-md-4 col-12">Column 2</div>
+                        <div class="col-md-4 col-12">Column 3</div>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>Responsive Columns</h2>
+
+                <div class="responsive-container">
+                    <div class="column">Column 1</div>
+                    <div class="column">Column 2</div>
+                </div>
+                </section>
+
+            <section id="courses">
+                <h2>My courses (Grid)</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Website Development</div>
+                    <div class="grid-item">Python Programming</div>
+                    <div class="grid-item">Digital Service Development</div>
+                    <div class="grid-item">Ongoing</div>
+                    <div class="grid-item">Completed</div>
+                    <div class="grid-item">Completed</div>
+                </div>
+            </section>
+
+                <section>
+                    <h2>Responsive example</h2>
+
+                    <div class="media-query-box">
+                    Resize the window to see the effect!
+                </div>
+                </section>
+
+            <section id="contact">
+                <h2>Contact me</h2>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Kuva.JPG" class="card-img-top" alt="My image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a simple card example using Bootstrap.</p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Interactive Elements</h2>
+
+            <button class="transition-button">Hover me</button>
+
+            <div class="animation-box"></div>
+        </section>
+
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+
+        <div class="alert alert-warning" role="alert">
+            This is a warning alert-check it out!
+        </div>
+
+        <div class="alert alert-success">Success alert!</div>
+        <div class="alert alert-danger">Danger alert!</div>
+        <div class="alert alert-info">Info alert!</div>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    </body>
+    </html>
